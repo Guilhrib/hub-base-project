@@ -14,3 +14,7 @@ CREATE TABLE "integration_tasks" (
 );
 
 CREATE INDEX ON "integration_tasks" ("id_idea");
+
+ALTER TABLE "integration_tasks" ADD FOREIGN KEY ("id_idea") REFERENCES "idea" ("id");
+
+ALTER TABLE "integration_tasks" ADD FOREIGN KEY ("id_user") REFERENCES "user" ("id");

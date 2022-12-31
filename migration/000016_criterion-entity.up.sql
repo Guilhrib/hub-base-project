@@ -6,3 +6,7 @@ CREATE TABLE "criterion" (
 );
 
 CREATE INDEX ON "criterion" ("id");
+
+ALTER TABLE "company_criterion" ADD FOREIGN KEY ("id_company") REFERENCES "company" ("id");
+
+ALTER TABLE "company_criterion" ADD FOREIGN KEY ("id_criterion") REFERENCES "criterion" ("id");

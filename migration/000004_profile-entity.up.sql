@@ -8,3 +8,9 @@ CREATE TABLE "profile" (
   "id_company" uuid,
   "id_job_position" uuid
 );
+
+ALTER TABLE "profile" ADD FOREIGN KEY ("id_company") REFERENCES "company" ("id");
+
+ALTER TABLE "profile" ADD FOREIGN KEY ("id_job_position") REFERENCES "job_position" ("id");
+
+ALTER TABLE "profile" ADD FOREIGN KEY ("id") REFERENCES "user" ("id_profile");

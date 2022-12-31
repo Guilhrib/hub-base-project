@@ -12,3 +12,7 @@ CREATE TABLE "metrics" (
 );
 
 CREATE INDEX ON "metrics" ("id_company");
+
+ALTER TABLE "metrics" ADD FOREIGN KEY ("id_company") REFERENCES "company" ("id");
+
+ALTER TABLE "metrics" ADD FOREIGN KEY ("id_company") REFERENCES "user" ("id_profile");

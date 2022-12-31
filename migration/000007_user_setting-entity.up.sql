@@ -14,3 +14,5 @@ CREATE TABLE "user_setting" (
 );
 
 CREATE INDEX ON "user_setting" ("id_user");
+
+ALTER TABLE "user_setting" ADD FOREIGN KEY ("id_user") REFERENCES "user" ("id");

@@ -10,3 +10,5 @@ CREATE TABLE "job_position" (
 CREATE INDEX ON "job_position" ("id");
 
 CREATE INDEX ON "job_position" ("id_company");
+
+ALTER TABLE "job_position" ADD FOREIGN KEY ("id_company") REFERENCES "company" ("id");

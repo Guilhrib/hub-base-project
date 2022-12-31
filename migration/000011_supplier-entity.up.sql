@@ -20,3 +20,5 @@ CREATE INDEX ON "supplier" ("id");
 CREATE INDEX ON "supplier" ("id_company");
 
 CREATE INDEX ON "supplier" ("id_company", "standard");
+
+ALTER TABLE "supplier" ADD FOREIGN KEY ("id_company") REFERENCES "company" ("id");

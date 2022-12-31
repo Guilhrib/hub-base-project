@@ -11,3 +11,7 @@ CREATE TABLE "idea_comment" (
 CREATE INDEX ON "idea_comment" ("id");
 
 CREATE INDEX ON "idea_comment" ("id_idea");
+
+ALTER TABLE "idea_comment" ADD FOREIGN KEY ("id_idea") REFERENCES "idea" ("id");
+
+ALTER TABLE "idea_comment" ADD FOREIGN KEY ("id_user") REFERENCES "user" ("id");

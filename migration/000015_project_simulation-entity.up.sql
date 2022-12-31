@@ -16,3 +16,5 @@ CREATE TABLE "project_simulation" (
 CREATE INDEX ON "project_simulation" ("id");
 
 CREATE INDEX ON "project_simulation" ("id_company");
+
+ALTER TABLE "project_simulation" ADD FOREIGN KEY ("id_company") REFERENCES "company" ("id");

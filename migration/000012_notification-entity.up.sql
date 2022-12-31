@@ -19,3 +19,5 @@ CREATE INDEX ON "notification" ("id");
 CREATE INDEX ON "notification" ("id_idea");
 
 CREATE INDEX ON "notification" ("id_idea", "disable");
+
+ALTER TABLE "notification" ADD FOREIGN KEY ("id_idea") REFERENCES "idea" ("id");

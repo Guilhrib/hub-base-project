@@ -9,3 +9,4 @@ CREATE TABLE "permission" (
 );
 
 CREATE INDEX ON "permission" ("id_profile");
+
