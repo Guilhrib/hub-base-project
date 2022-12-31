@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS "idea_project_simulation";
